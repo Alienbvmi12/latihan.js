@@ -1,0 +1,92 @@
+<br>
+		<div id="toggle-canvas-pos">
+		<center>
+			<label class="switch">
+				<input type="checkbox" id="togca">
+				<span class="slider"></span>
+			</label>
+		</center>
+		</div>
+		<div id="room" class="viewer yes mt-3" style="width : 700px; height : 400px;">
+			<div></div>
+			<img class="viewer-image" src="lumine.jpg">
+			<div></div>
+		</div>
+		<div class="mt-5 yes" style="width : 50%">
+			<div class="container">
+			<br>
+				<div class="input-group">
+					<button class="btn btn-success" id="chosm" onclick="$('#layer').click();">Choose Image</button>
+					<button id="save" class="btn btn-primary">Save</button>
+					<button id="reset" class="btn btn-danger">Reset filter</button>
+					<button id="animation" class="btn btn-primary d-inline" onclick="aniSet()">Animation on</button>
+					<select id="type" class="form-control d-inline">
+						<option value="png">--Select image extension--</option>
+						<option value="png">PNG</option>
+						<option value="jpg">JPG</option>
+						<option value="jpeg">JPEG</option>
+						<option value="webp">WEBP</option>
+						<option value="heic">HEIC</option>
+						<option value="gif">GIF</option>
+						<option value="tiff">TIFF</option>
+						<option value="heif">HEIF</option>
+						<option value="bmp">BMP</option>
+						<option value="apng">APNG</option>
+						<option value="avif">AVIF</option>
+						<option value="ico">ICO</option>
+					</select>
+				</div>
+			
+				<input type="file" style="display : none;" accept="image/*" id="layer">
+				<hr>
+				<div class="d-inline-flex">
+					<div class="edit-menu">
+						<div class="editor-button">
+							<input type="button" class="btn fliter btn-primary mb-1" value="blur" id="blur">
+							<input type="button" class="btn fliter btn-secondary mb-1" value="brightness" id="brightness">
+							<input type="button" class="btn btn-secondary mb-1 fliter" value="contrast" id="contrast">
+							<input type="button" class="btn btn-secondary mb-1 fliter" value="grayscale" id="grayscale">
+							<input type="button" class="btn btn-secondary mb-1 fliter" value="hue" id="hue">
+							<input type="button" class="btn btn-secondary mb-1 fliter" value="inversion" id="invert">
+							<input type="button" class="btn btn-secondary mb-1 fliter" value="opacity" id="opacity">
+							<input type="button" class="btn btn-secondary mb-1 fliter" value="saturation" id="saturate">
+							<input type="button" class="btn btn-secondary mb-1 fliter" value="sepia" id="sepia">
+						</div>
+						
+					</div>
+					<div class="edit-menu">
+						<div class="flipper-button">
+							<button class="btn btn-dark mb-1" style="width : 45px;" id="left">
+								<svg class="bi me-2" width="20" height="20" style="filter : invert(1);"><use xlink:href="#leftsvg"/></svg>
+							</button>
+							<button class="btn btn-dark mb-1" style="width : 45px;" id="right">
+								<svg class="bi me-2" width="20" height="20" style="filter : invert(1);"><use xlink:href="#rightsvg"/></svg>
+							</button>
+							<button class="btn btn-dark mb-1" style="width : 45px;" id="horizontal">
+								<svg class="bi me-2" width="20" height="20" style="filter : invert(1);"><use xlink:href="#flip"/></svg>
+							</button>
+							<button class="btn btn-dark mb-1" style="width : 45px;" id="vertical">
+								<svg class="bi me-2" width="20" height="20" style="transform : rotate(90deg);filter : invert(1);"><use xlink:href="#flip"/></svg>
+							</button>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="editor-body">
+					<label id="nam">Blur</label> : <text id="val">0px</text>
+					<input type="range" class="form-range" min="0" max="100" value="0">
+				</div>
+				</div>
+				
+				<br>
+				
+			</div>
+		</div>
+		
+		<div id="shiso"></div>
+		<!-- Modal -->
+		
+		<div id="sound"></div>
+		<script src="js/bootstrap/bootstrap.js"></script>
+		<script src="js/myEditorScript.js"></script>

@@ -1,0 +1,201 @@
+			*{
+				transition : 0.5s;
+			}
+			.box
+			{
+				width: 100px;
+				height: 100px;
+				border: 1px solid black;
+				margin: 50px auto;
+				transition: .3s width,.3s height .3s,.3s margin-top .3s,1s background-color;
+			}
+			.size
+			{
+				width: 150px;
+				height: 150px;
+				margin-top: 25px;
+			}
+			.caption
+			{
+				background-color: black;
+			}
+			.wadahh{
+				display : inline-block;
+			}
+			.wadahh > div{
+				width : 200px;
+				margin : auto;
+			}
+			.bagan{
+				transition : 1s;
+				text-align : center;
+				position : absolute;
+				border-top-left-radius : 20px;
+			}
+			.arrow{
+				height : 0;
+				width : 0;
+				border-top : 15px solid rgba(0,0,0,1);
+				border-left : 15px solid transparent;
+				border-right : 15px solid transparent;
+				margin : auto;
+				margin-bottom : 4px;
+			}
+			.visib{
+				display : none;
+			}
+			.trans-to-left{
+				transform : translateX(-400px);
+				filter : opacity(0);
+			}
+			.trans-to-right{
+				transform : translateX(-200px);
+				filter : opacity(0);
+			}
+			#wadah{
+				width : 600px;
+				overflow : hidden;
+			}
+			.viewer{
+				display : flex; 
+				justify-content : center;
+				background-image : url(../png.jpg);
+			}
+			#room{
+			}
+			.yes{
+				width : 99%;
+				background-color : white;
+				margin : auto;
+				margin-top : -782px;
+				overflow : hidden;
+				height : 778px;
+				z-index : 1;
+				animation: exa 5s linear infinite;
+			}
+			.yes-vessel{
+				width : 50%;
+				height : 785px;
+				margin : auto;
+				overflow : hidden;
+			}
+			.yesu{
+				background-image : linear-gradient(green, lime, yellow);
+				transform : rotate(20deg);
+				width : 700px;
+				height : 392.5px;
+				margin : 0;	
+				z-index : 0 ;
+				animation: example 5s ease-in-out infinite alternate;
+			}
+			.yesa{
+				background-image : linear-gradient(green, lime, yellow);
+				transform : rotate(20deg);
+				width : 700px;
+				height : 392.5px;
+				margin : 0;	
+				z-index : 0 ;
+				animation: example 5s ease-in-out 0.5s infinite alternate;
+			}
+			
+			@keyframes example {
+			  0%{transform : rotate(0deg);}
+			  50%{transform : rotate(180deg);}
+			  100%{transform : rotate(360deg);}
+			}
+			@keyframes exa {
+			  0%{transform : rotate(0deg);}
+			  100%{transform : rotate(0deg);}
+			}
+			.yes > div{
+				width : 100%;
+				margin : auto;
+			}
+			.img-ted:hover{
+				background-color : lightblue;
+				cursor : pointer;
+			}
+			.min{
+				width : 300px;
+			}
+			
+			#toggle-canvas-pos{
+				width : 100px; 
+				height : 100px;
+				padding-top : 30px;
+				border-radius : 100%; 
+				background-color : white;
+				position : fixed;
+				bottom : 10px;
+				right : 10px;
+				box-shadow : 0 0 7px rgba(0,0,0, 0.4);
+			}
+			
+			/* The switch - the box around the slider */
+			.switch {
+			  font-size: 17px;
+			  position: relative;
+			  display: inline-block;
+			  width: 3.5em;
+			  height: 2em;
+			}
+
+			/* Hide default HTML checkbox */
+			.switch input {
+			  opacity: 0;
+			  width: 0;
+			  height: 0;
+			}
+
+			/* The slider */
+			.slider {
+			  position: absolute;
+			  cursor: pointer;
+			  top: 0;
+			  left: 0;
+			  right: 0;
+			  bottom: 0;
+			  background-color: lightblue;
+			  border: 1px solid lightblue;
+			  transition: .4s;
+			  border-radius: 30px;
+			}
+
+			.slider:before {
+			  position: absolute;
+			  content: "";
+			  height: 1.4em;
+			  width: 1.4em;
+			  border-radius: 20px;
+			  left: 0.27em;
+			  bottom: 0.25em;
+			  background-color: orange;
+			  transition: .4s;
+			}
+
+			input:checked + .slider {
+			  background-color: black;
+			  border: 1px solid #007bff;
+			}
+
+			input:focus + .slider {
+			  box-shadow: 0 0 1px #007bff;
+			}
+
+			input:checked + .slider:before {
+			  transform: translateX(1.4em);
+			  background-color: #fff;
+			}
+			
+			.viewer-image{
+				max-height : 400px;
+				max-width : 700px;
+				height : auto;
+				width : auto;
+			}
+			
+			.disable{
+				pointer-events : none;
+			}
+			
+			
